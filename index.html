@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player-ts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela Jogadores </h1>
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody class="tabela-jogador">
+            <tr class="jogador">
+                <td class="info-nome">Lázaro</td>
+                <td class="info-altura">1.70</td>
+                <td class="info-peso">68</td>
+                <td class="info-idade">18</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button class="botao-add"><a href="adiciona.html">Adicionar Jogador</a></button>
+
+    <script src="prod/app.js"></script> 
+    <script>
+        
+        
+        function exibirDados() {
+            var params = getURLParameters();
+            if(params){
+                const player = obtemPlayer(params);
+                addPLayerTabela(player)
+            }
+        }
+        
+        window.onload = exibirDados;
+    
+        // Chama a função quando a página é carregada
+        
+    </script>
+</body>
+</html>
