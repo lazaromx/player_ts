@@ -28,24 +28,13 @@
         </tbody>
     </table>
     
-    <button class="botao-add"><a href="adiciona.html">Adicionar Jogador</a></button>
+    <button class="botao-add">
+        <a href="adiciona.html">Adicionar Jogador</a>
+    </button>
 
-    <script src="prod/app.js"></script> 
+    <script src="dist/app.js"></script>
     <script>
-        
-        
-        function exibirDados() {
-            var params = getURLParameters();
-            if(params){
-                const player = obtemPlayer(params);
-                addPLayerTabela(player)
-            }
-        }
-        
-        window.onload = exibirDados;
-    
-        // Chama a função quando a página é carregada
-        
+       // CarregarDados()
     </script>
 </body>
 </html>
